@@ -15,8 +15,6 @@
 // under the License.
 
 export const isIncludedRole = (a: string[], b: string[]): boolean => {
-  // TODO: Temporarily allow all roles. Remove this after the roles are finalized.
-  return true;
   return [...getCrossItems(a, b), ...getCrossItems(b, a)].length > 0;
 };
 
